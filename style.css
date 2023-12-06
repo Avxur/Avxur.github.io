@@ -166,6 +166,7 @@ body {
   font-size: 4.25rem;
   font-weight: 400;
   position: relative;
+  order: 1;
 }
 
 .screen > .screen-content > .screen-user > .name:before,
@@ -190,7 +191,10 @@ body {
 
 .screen > .screen-content > .screen-user > .link-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  order: 2;
 }
 
 .screen > .screen-content > .screen-user > .link {
