@@ -24,7 +24,7 @@ body {
 .screen {
   width: 500px;
   display: flex;
-  border: 3px solid rgb(var(--primary-rgb) / 80%);
+  border: 0px solid rgb(var(--primary-rgb) / 80%);
   aspect-ratio: 10 / 16;
   border-radius: 1rem;
   background-color: rgb(var(--primary-rgb) / 15%);
@@ -36,7 +36,7 @@ body {
 .screen:after,
 .screen:before {
   content: "";
-  height: 5px;
+  height: 0px;
   position: absolute;
   z-index: 4;
   left: 50%;
