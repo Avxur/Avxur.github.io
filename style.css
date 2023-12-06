@@ -33,6 +33,7 @@ body {
   z-index: 10;
 }
 .screen:before {
+  content: ""; /* Added content property */
   width: 15%;
   top: 0rem;
   border-bottom-left-radius: 1rem;
@@ -40,6 +41,7 @@ body {
 }
 
 .screen:after {
+  content: ""; /* Added content property */
   width: 25%;
   bottom: 0rem;
   border-top-left-radius: 1rem;
@@ -124,7 +126,7 @@ body {
 
 .screen > .screen-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Changed to column to stack elements vertically */
   align-items: center;
   justify-content: flex-end;
   flex-grow: 1;
@@ -145,7 +147,7 @@ body {
 
 .screen > .screen-content > .screen-user{
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* Changed to column to stack Avxur above icons */
   align-items: center;
   gap: 1rem;
   position: relative;
