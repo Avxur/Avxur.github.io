@@ -32,8 +32,14 @@ body {
   position: relative;
   z-index: 10;
 }
+.screen:before,
+.screen:after {
+  content: "";
+  position: absolute;
+  border-radius: 1rem;
+}
+
 .screen:before {
-  content: ""; /* Added content property */
   width: 15%;
   top: 0rem;
   border-bottom-left-radius: 1rem;
@@ -41,7 +47,6 @@ body {
 }
 
 .screen:after {
-  content: ""; /* Added content property */
   width: 25%;
   bottom: 0rem;
   border-top-left-radius: 1rem;
@@ -130,7 +135,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   flex-grow: 1;
-  gap: 4rem;
+  gap: 1rem; /* Adjusted the gap between Avxur and icons */
   position: relative;
   z-index: 3;
   margin: 1rem;
@@ -145,7 +150,7 @@ body {
   text-shadow: 0px 0px 0.5rem white;
 }
 
-.screen > .screen-content > .screen-user{
+.screen > .screen-content > .screen-user {
   display: flex;
   flex-direction: column; /* Changed to column to stack Avxur above icons */
   align-items: center;
