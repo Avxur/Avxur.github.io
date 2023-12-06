@@ -171,16 +171,6 @@ body {
   font-weight: 400;
 }
 
-.screen > .screen-content > .screen-user > .name:before,
-.screen > .screen-content > .screen-user > .name:after {
-  content: "";
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  border: 2px solid white;
-  border-radius: 2px;
-}
-
 .screen > .screen-content > .screen-user > .name:before {
   top: 55%;
   right: -1.5rem;
