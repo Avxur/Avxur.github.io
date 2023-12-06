@@ -153,20 +153,15 @@ body {
 
 .screen > .screen-content > .screen-user > .name-container {
   display: flex;
-  flex-direction: column; /* Change to column to stack text */
+  flex-direction: row; /* Change to column to stack text */
   align-items: center;
-  order: 2;
+  gap: 1rem;
 }
 
 .screen > .screen-content > .screen-user > .name {
-  font-family: "Source Code Pro", monospace;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
+  position: relative;
   font-size: 4.25rem;
   font-weight: 400;
-  position: relative;
-  order: 1;
 }
 
 .screen > .screen-content > .screen-user > .name:before,
@@ -186,15 +181,12 @@ body {
 
 .screen > .screen-content > .screen-user > .name:after {
   top: 45%;
-  left: -1.5rem;
+  left: -1.5rem;  
 }
 
 .screen > .screen-content > .screen-user > .link-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
-  order: 3;
 }
 
 .screen > .screen-content > .screen-user > .link {
@@ -208,15 +200,6 @@ body {
 
 .screen > .screen-content > .screen-user > .link:is(:hover, :focus) {  
   text-decoration: underline; 
-}
-
-.screen > .screen-content > .screen-user > .link-container > a {
-  display: flex;
-  align-items: center;
-}
-
-.screen > .screen-content > .screen-user > .link-container > a > svg {
-  margin-right: 0.5rem;
 }
 
 @media(max-width: 700px) {
