@@ -55,24 +55,6 @@ body {
     background-position: 0% -100%;
   }
 }
-
-.screen-overlay {    
-  background: linear-gradient(
-    rgb(var(--primary-rgb) / 0.15),
-    rgb(var(--primary-rgb) / 0.15) 3px,
-    transparent 0px,
-    transparent 0px
-  );
-  background-size: 100% 9px;
-  height: 100%;
-  width: 100%;
-  animation: pan-overlay 22s infinite linear;
-  position: absolute;
-  z-index: 2;
-  left: 0px;
-  top: 0px;
-}
-
 @keyframes pan-image {  
   0% {
     background-position: 36% 42%;
