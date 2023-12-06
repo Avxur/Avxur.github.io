@@ -145,7 +145,7 @@ body {
 
 .screen > .screen-content > .screen-user {
   display: flex;
-  flex-direction: row; /* Change to column for text above icons */
+  flex-direction: column; /* Change to column for text above icons */
   align-items: center;
   gap: 1rem;
   position: relative;
