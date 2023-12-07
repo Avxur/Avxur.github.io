@@ -31,7 +31,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
   gap: 1vw; /* Adjust the gap between cards as needed */
-  align-items: center; /* Center vertically */
+  align-content: center; /* Vertically center the grid within the container */
+  align-items: center; /* Center items within each grid cell */
   justify-content: center; /* Center horizontally */
   position: relative;
   margin: 0;
