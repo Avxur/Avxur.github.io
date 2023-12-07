@@ -9,7 +9,7 @@
   --hyperplexed-main-light-rgb: 56 182 255;
   --hyperplexed-secondary-rgb: 42 252 152;
 
-  --card-size: 30vw; /* Use relative unit for card size */
+  --card-size: 10vw; /* Use relative unit for card size */
   --font-size: 2vw; /* Use relative unit for font size */
   --logo-size: calc(var(--card-size) * 0.3);
 }
@@ -28,7 +28,9 @@ body {
 .card-track {
   height: 100vh;
   width: 100vw;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
+  gap: 1vw; /* Adjust the gap between cards as needed */
   align-items: center;
   position: relative;
   margin: 0;
@@ -117,6 +119,7 @@ body {
 
 /* -- Extra Styles -- */
 /* ... Your existing extra styles remain unchanged ... */
+
 
 
 /* -- Extra Styles -- */
