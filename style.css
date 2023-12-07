@@ -31,7 +31,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
   gap: 1vw; /* Adjust the gap between cards as needed */
-  align-items: center;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
   position: relative;
   margin: 0;
 }
@@ -116,7 +117,6 @@ body {
     border-radius: 1vw; /* Adjust relative unit for smaller screens */
   }
 }
-
 /* -- Extra Styles -- */
 /* ... Your existing extra styles remain unchanged ... */
 
