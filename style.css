@@ -145,7 +145,7 @@ body {
 }
 
 .screen > .screen-content > .screen-icon {
-  color: white;
+  color: #d0d0d0;
   font-size: 4rem;
   text-shadow: 0px 0px 0.5rem white;
 }
@@ -160,7 +160,7 @@ body {
 
 .screen > .screen-content > .screen-user > :is(.name, .link) {
   font-family: "Source Code Pro", monospace;
-  color: white; 
+  color: #d0d0d0; 
   text-align: center;
   text-transform: uppercase; 
 }
@@ -182,9 +182,10 @@ body {
 }
 
 .screen > .screen-content > .screen-user > .link {  
+  color: #d0d0d0;
   opacity: 0.8;
   font-size: 1.5rem;
-  text-shadow: 0px 0px 0.5rem white;
+  text-shadow: 0px 0px 0.5rem #d0d0d0;
   font-weight: 400;
   letter-spacing: 0.3rem;
   text-decoration: none;
