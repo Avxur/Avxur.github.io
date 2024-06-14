@@ -9,43 +9,36 @@
     background-color: #0c0c0f;
     font-family: 'Lato', sans-serif;
     color: #d7d7d7;
-    text-align: center;
     margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: left;
   }
   .definition {
-    text-align: left;
-    max-width: 80%;
+    font-size: 24px;
+    font-weight: bold;
   }
-  .definition h2 {
-    font-size: 1.5em;
-  }
-  .definition p {
-    font-size: 1em;
-  }
-  .definition a {
-    color: #d7d7d7;
+  .avxur-link {
     text-decoration: underline;
+    color: #d7d7d7;
   }
-  .definition em {
+  .avxur-link:hover {
+    text-decoration: underline;
+    color: #ffffff; /* Change color on hover if desired */
+  }
+  .italicize {
     font-style: italic;
   }
 </style>
 </head>
 <body>
-
-<div class="definition">
-  <h2><strong>DEFINITION:</strong> Avxur</h2>
-  <p><strong>noun</strong> *Av·​xur | \ˈav-zər\</p>
-  <p><strong>1. The act of <a href="https://www.avxur.com/avxuring" target="_blank" rel="noopener noreferrer">Avxuring</a></strong></p>
-  <p><em>This page is an example of <a href="https://www.avxur.com/avxuring" target="_blank" rel="noopener noreferrer">Avxuring</a></em></p>
-  <p><em>   
-  <p>See: <a href="https://www.avxur.com/avxuring" target="_blank" rel="noopener noreferrer">Avxuring</a></p>
-</div>
-
+  <div>
+    <p class="definition">DEFINITION: Avxur</p>
+    <p><span>1. The act of </span><a href="https://www.avxur.com/avxuring" class="avxur-link">Avxuring</a></p>
+    <p>See definition of <a href="https://www.avxur.com/avxuring" class="avxur-link">Avxuring</a> for an example of Avxur</p>
+    <p class="italicize">See: <a href="https://www.avxur.com/avxuring" class="avxur-link">Avxuring</a></p>
+  </div>
 </body>
 </html>
