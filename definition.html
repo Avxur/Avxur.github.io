@@ -15,7 +15,7 @@
             height: 100vh;
             margin: 0;
             text-align: left;
-            font-size: 16px; /* Base font size */
+            font-size: 16px;
         }
         .container {
             max-width: 800px;
@@ -27,19 +27,34 @@
             margin-bottom: 20px;
         }
         .definition-title h1 {
-            font-size: 2em; /* Explicit font size for h1 */
+            font-size: 2em;
         }
         .highlight {
             color: #9ac0fb;
             text-decoration: underline;
         }
+        .dynamic-font {
+            display: inline-block;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Montserrat&family=Oswald&family=Raleway&family=Poppins&family=Playfair+Display&family=Merriweather&family=Lora&family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="definition-title">
-            <h1>DEFINITION</h1>
+            <h1>
+                <span class="dynamic-font">D</span>
+                <span class="dynamic-font">E</span>
+                <span class="dynamic-font">F</span>
+                <span class="dynamic-font">I</span>
+                <span class="dynamic-font">N</span>
+                <span class="dynamic-font">I</span>
+                <span class="dynamic-font">T</span>
+                <span class="dynamic-font">I</span>
+                <span class="dynamic-font">O</span>
+                <span class="dynamic-font">N</span>
+            </h1>
         </div>
         <p>
             <strong>Avxur</strong><br>
@@ -47,5 +62,18 @@
         <p>1. The act of <a class="highlight" href="https://www.avxur.com/avxuring">Avxuring</a></p>
         <p>See also: <a class="highlight" href="https://www.avxur.com/avxuring">Avxuring</a> for an example and further definition of Avxur.</p>
     </div>
+    <script>
+        const fonts = ['Lato', 'Roboto', 'Open Sans', 'Montserrat', 'Oswald', 'Raleway', 'Poppins', 'Playfair Display', 'Merriweather', 'Lora', 'Nunito'];
+        const letters = document.querySelectorAll('.dynamic-font');
+
+        function changeFonts() {
+            letters.forEach(letter => {
+                const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+                letter.style.fontFamily = randomFont;
+            });
+        }
+
+        setInterval(changeFonts, 500);
+    </script>
 </body>
 </html>
