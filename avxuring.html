@@ -10,12 +10,12 @@
             color: #d7d7d7;
             font-family: 'Lato', sans-serif;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             text-align: left;
-            font-size: 16px;
+            font-size: 16px; /* Base font size */
         }
         .container {
             max-width: 800px;
@@ -25,21 +25,9 @@
         .definition-title {
             text-align: center;
             margin-bottom: 20px;
-            height: 2em; /* Fixed height to prevent layout shift */
-            flex-shrink: 0; /* Prevent shrinking */
         }
         .definition-title h1 {
-            font-size: 2em;
-            line-height: 1em;
-        }
-        .dynamic-font {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 2em;
-            height: 2em;
-            font-size: 2em;
-            line-height: 1em;
+            font-size: 2em; /* Explicit font size for h1 */
         }
         .highlight {
             color: #9ac0fb;
@@ -47,43 +35,17 @@
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Montserrat&family=Oswald&family=Raleway&family=Poppins&family=Playfair+Display&family=Merriweather&family=Lora&family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="definition-title">
-        <h1>
-            <span class="dynamic-font">D</span>
-            <span class="dynamic-font">E</span>
-            <span class="dynamic-font">F</span>
-            <span class="dynamic-font">I</span>
-            <span class="dynamic-font">N</span>
-            <span class="dynamic-font">I</span>
-            <span class="dynamic-font">T</span>
-            <span class="dynamic-font">I</span>
-            <span class="dynamic-font">O</span>
-            <span class="dynamic-font">N</span>
-        </h1>
-    </div>
     <div class="container">
+        <div class="definition-title">
+            <h1>DEFINITION</h1>
+        </div>
         <p>
             <strong>Avxuring</strong><br>
-            <em>verb</em> Av·​xur·​ing | \ˈav-zər-iŋ\
-        </p>
+            <em>verb</em> Av·​xur·​ing | \ˈav-zər-iŋ\</p>
         <p>1. The act of doing an <a class="highlight" href="https://www.avxur.com/definition">Avxur</a></p>
         <p>See also: <a class="highlight" href="https://www.avxur.com/definition">Avxur</a> for an example and further definition of Avxuring.</p>
     </div>
-    <script>
-        const fonts = ['Lato', 'Roboto', 'Open Sans', 'Montserrat', 'Oswald', 'Raleway', 'Poppins', 'Playfair Display', 'Merriweather', 'Lora', 'Nunito'];
-        const letters = document.querySelectorAll('.dynamic-font');
-
-        function changeFonts() {
-            letters.forEach(letter => {
-                const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
-                letter.style.fontFamily = randomFont;
-            });
-        }
-
-        setInterval(changeFonts, 500);
-    </script>
 </body>
 </html>
