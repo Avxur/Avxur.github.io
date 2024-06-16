@@ -10,20 +10,23 @@
             color: #d7d7d7;
             font-family: 'Lato', sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
             margin: 0;
-            text-align: center;
+            text-align: left;
             font-size: 16px;
         }
         .container {
             max-width: 800px;
             padding: 20px;
+            text-align: left;
         }
         .definition-title {
+            text-align: center;
             margin-bottom: 20px;
             height: 2em; /* Fixed height to prevent layout shift */
+            flex-shrink: 0; /* Prevent shrinking */
         }
         .definition-title h1 {
             font-size: 2em;
@@ -47,24 +50,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Montserrat&family=Oswald&family=Raleway&family=Poppins&family=Playfair+Display&family=Merriweather&family=Lora&family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="definition-title">
+        <h1>
+            <span class="dynamic-font">D</span>
+            <span class="dynamic-font">E</span>
+            <span class="dynamic-font">F</span>
+            <span class="dynamic-font">I</span>
+            <span class="dynamic-font">N</span>
+            <span class="dynamic-font">I</span>
+            <span class="dynamic-font">T</span>
+            <span class="dynamic-font">I</span>
+            <span class="dynamic-font">O</span>
+            <span class="dynamic-font">N</span>
+        </h1>
+    </div>
     <div class="container">
-        <div class="definition-title">
-            <h1>
-                <span class="dynamic-font">D</span>
-                <span class="dynamic-font">E</span>
-                <span class="dynamic-font">F</span>
-                <span class="dynamic-font">I</span>
-                <span class="dynamic-font">N</span>
-                <span class="dynamic-font">I</span>
-                <span class="dynamic-font">T</span>
-                <span class="dynamic-font">I</span>
-                <span class="dynamic-font">O</span>
-                <span class="dynamic-font">N</span>
-            </h1>
-        </div>
         <p>
             <strong>Avxuring</strong><br>
-            <em>verb</em> Av·​xur·​ing | \ˈav-zər-iŋ\</p>
+            <em>verb</em> Av·​xur·​ing | \ˈav-zər-iŋ\
+        </p>
         <p>1. The act of doing an <a class="highlight" href="https://www.avxur.com/definition">Avxur</a></p>
         <p>See also: <a class="highlight" href="https://www.avxur.com/definition">Avxur</a> for an example and further definition of Avxuring.</p>
     </div>
