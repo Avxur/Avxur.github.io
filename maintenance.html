@@ -93,13 +93,13 @@
             return fonts[Math.floor(Math.random() * fonts.length)];
         }
 
-        function changeFont(letter) {
-            letter.style.fontFamily = getRandomFont();
+        function changeFont() {
+            document.querySelectorAll('.letter').forEach(letter => {
+                letter.style.fontFamily = getRandomFont();
+            });
         }
 
-        document.querySelectorAll('.letter').forEach(letter => {
-            setInterval(() => changeFont(letter), 500 + Math.random() * 500);
-        });
+        setInterval(changeFont, 500);
     </script>
 </body>
 </html>
