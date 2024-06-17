@@ -60,7 +60,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #282c34;
+            background-color: black;
             color: white;
             font-size: calc(10vw + 10vh);
         }
@@ -70,11 +70,11 @@
         }
 
         .letter {
-            animation: changeFont 0.5s infinite;
+            animation: changeFont 0.5s step-start infinite;
         }
 
         @keyframes changeFont {
-            0% { font-family: inherit; }
+            0%, 100% { font-family: inherit; }
         }
     </style>
 </head>
