@@ -5,57 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVXUR</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baloo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
         body, html {
             height: 100%;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #000;
-            color: #fff;
-            font-size: 5em;
-            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: white;
+            font-size: calc(10vw + 10vh);
         }
-        .center {
+
+        #avxur {
             display: flex;
         }
+
         .letter {
-            margin: 0 5px;
+            animation: changeFont 0.5s infinite;
+        }
+
+        @keyframes changeFont {
+            0% { font-family: inherit; }
         }
     </style>
 </head>
 <body>
-    <div class="center">
-        <span class="letter" id="letter1">A</span>
-        <span class="letter" id="letter2">V</span>
-        <span class="letter" id="letter3">X</span>
-        <span class="letter" id="letter4">U</span>
-        <span class="letter" id="letter5">R</span>
+    <div id="avxur">
+        <span class="letter">A</span>
+        <span class="letter">V</span>
+        <span class="letter">X</span>
+        <span class="letter">U</span>
+        <span class="letter">R</span>
     </div>
 
     <script>
         const fonts = [
-            'Arial', 'Verdana', 'Helvetica', 'Times New Roman', 'Georgia', 
-            'Courier New', 'Brush Script MT', 'Lucida Console', 'Trebuchet MS', 
-            'Impact', 'Comic Sans MS', 'Franklin Gothic Medium', 'Garamond', 
-            'Palatino', 'Tahoma', 'Bookman', 'Candara', 'Copperplate', 
-            'Didot', 'Futura', 'Gill Sans', 'Goudy Old Style', 'Hoefler Text', 
-            'Monaco', 'Optima', 'Perpetua', 'Rockwell', 'Baskerville', 
-            'Century Gothic', 'Consolas', 'Lucida Sans', 'MS Gothic', 
-            'Segoe UI', 'Source Sans Pro', 'Playfair Display', 'Raleway', 
-            'Merriweather', 'Oswald', 'PT Sans', 'Noto Sans', 'Roboto', 
-            'Lora', 'Open Sans', 'Slabo 27px', 'Ubuntu', 'Arvo', 
-            'Karla', 'Rubik', 'Nunito', 'Work Sans'
+            'Roboto', 'Open Sans', 'Lato', 'Oswald', 'Montserrat', 'Raleway', 'Slabo 27px', 'Inconsolata',
+            'Source Sans Pro', 'PT Sans', 'Merriweather', 'Abril Fatface', 'Arvo', 'Josefin Sans', 'Ubuntu',
+            'Playfair Display', 'Rubik', 'Poppins', 'Noto Sans', 'Titillium Web', 'Quicksand', 'Exo 2', 'Fira Sans',
+            'Hind', 'Kanit', 'Nunito', 'Oxygen', 'PT Serif', 'Rajdhani', 'Righteous', 'Roboto Condensed', 'Sarala',
+            'Secular One', 'Signika', 'Solway', 'Spectral', 'Staatliches', 'Unica One', 'Varela Round', 'Vollkorn',
+            'Work Sans', 'Yanone Kaffeesatz', 'Zilla Slab', 'Bree Serif', 'Acme', 'Baloo', 'Cantarell', 'Cookie'
         ];
 
-        function changeFonts() {
-            for (let i = 1; i <= 5; i++) {
-                const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
-                document.getElementById(`letter${i}`).style.fontFamily = randomFont;
-            }
+        function getRandomFont() {
+            return fonts[Math.floor(Math.random() * fonts.length)];
         }
 
-        setInterval(changeFonts, 500);
+        function changeFont() {
+            document.querySelectorAll('.letter').forEach(letter => {
+                letter.style.fontFamily = getRandomFont();
+            });
+        }
+
+        setInterval(changeFont, 500);
     </script>
 </body>
 </html>
