@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Site Under Maintenance</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-  .maintenance-text {
-    font-size: 48px; /* Increased font size */
-    font-weight: bold; /* Bold text */
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVXUR</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            font-size: 5em;
+            font-family: Arial, sans-serif;
+        }
+        .center {
+            display: flex;
+        }
+        .letter {
+            margin: 0 5px;
+        }
+    </style>
 </head>
 <body>
-  <div class="maintenance-text">
-    SITE UNDER MAINTENANCE
-  </div>
+    <div class="center">
+        <span class="letter" id="letter1">A</span>
+        <span class="letter" id="letter2">V</span>
+        <span class="letter" id="letter3">X</span>
+        <span class="letter" id="letter4">U</span>
+        <span class="letter" id="letter5">R</span>
+    </div>
+
+    <script>
+        const fonts = [
+            'Arial', 'Verdana', 'Helvetica', 'Times New Roman', 'Georgia', 
+            'Courier New', 'Brush Script MT', 'Lucida Console', 'Trebuchet MS', 
+            'Impact', 'Comic Sans MS', 'Franklin Gothic Medium', 'Garamond', 
+            'Palatino', 'Tahoma', 'Bookman', 'Candara', 'Copperplate', 
+            'Didot', 'Futura', 'Gill Sans', 'Goudy Old Style', 'Hoefler Text', 
+            'Monaco', 'Optima', 'Perpetua', 'Rockwell', 'Baskerville', 
+            'Century Gothic', 'Consolas', 'Lucida Sans', 'MS Gothic', 
+            'Segoe UI', 'Source Sans Pro', 'Playfair Display', 'Raleway', 
+            'Merriweather', 'Oswald', 'PT Sans', 'Noto Sans', 'Roboto', 
+            'Lora', 'Open Sans', 'Slabo 27px', 'Ubuntu', 'Arvo', 
+            'Karla', 'Rubik', 'Nunito', 'Work Sans'
+        ];
+
+        function changeFonts() {
+            for (let i = 1; i <= 5; i++) {
+                const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+                document.getElementById(`letter${i}`).style.fontFamily = randomFont;
+            }
+        }
+
+        setInterval(changeFonts, 500);
+    </script>
 </body>
 </html>
